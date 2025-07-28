@@ -980,35 +980,3 @@ footer {
   background: rgba(165, 113, 72, 1);
   transform: translateY(-5px) !important;
 }
-
-/* ngilangin biru biru */
-
-/* Hilangkan highlight biru saat disentuh di semua elemen interaktif */
-.menu-item,
-.close-popup img,
-.hamburger,
-button,
-a,
-input,
-textarea {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none; /* cegah long press menu iOS */
-  outline: none;
-  box-shadow: none;
-}
-
-/* Hapus efek aktif & fokus */
-.menu-item:focus,
-.menu-item:active,
-.close-popup img:focus,
-.close-popup img:active,
-.hamburger:focus,
-.hamburger:active,
-button:focus,
-button:active,
-a:focus,
-a:active {
-  outline: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
-}
