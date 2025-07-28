@@ -18,9 +18,27 @@ body {
 
 /* hilangin efek biru biru */
 button,
-a {
-  -webkit-tap-highlight-color: transparent;
-  outline: none;
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent; /* Hilangkan highlight biru saat tap (Android) */
+  outline: none; /* Hilangkan outline fokus */
+  box-shadow: none; /* Hilangkan bayangan fokus jika ada */
+  border: none; /* Opsional, kalau tombolmu pakai border */
+  background-color: transparent; /* Opsional jika tombol default punya background */
+}
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+button:active,
+a:active,
+input:active,
+textarea:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important; /* Hindari background saat ditekan */
 }
 
 .wrapper {
