@@ -201,7 +201,7 @@ body {
 }
 
 /* Responsive: Tampilkan hamburger saat layar kecil atau besar*/
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .hamburger {
     display: flex;
     opacity: 0;
@@ -233,7 +233,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 450px) {
   .glass-popup {
     display: none !important;
   }
@@ -429,7 +429,7 @@ body {
 }
 
 /* === RESPONSIF: MOBILE LAYOUT === */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 450px) {
   .menu-grid {
     grid-template-columns: 1fr; /* 1 kolom di mobile */
     padding: 20px;
@@ -903,7 +903,7 @@ body {
   display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .contact-grid {
     flex-direction: column;
   }
