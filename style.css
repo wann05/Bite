@@ -17,7 +17,8 @@ body {
 }
 
 /* hilangin efek biru biru */
-button, a {
+button,
+a {
   -webkit-tap-highlight-color: transparent;
   outline: none;
 }
@@ -237,9 +238,19 @@ button, a {
     width: 80vw;
     backdrop-filter: blur(5px) saturate(180%);
   }
-  
-  .search-bar {
-    flex-direction: column;
+
+  @media (max-width: 450px) {
+    .search-bar {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #searchInput,
+    #searchButton,
+    #resetButton {
+      width: 100%;
+      max-width: 300px; /* opsional untuk batasi max lebarnya */
+    }
   }
 }
 
@@ -662,7 +673,8 @@ button, a {
   width: 35px;
   height: 35px;
   cursor: pointer;
-  /*Animasihalussaatscaleberubah*/transition: transform 0.3s ease;
+  /*Animasihalussaatscaleberubah*/
+  transition: transform 0.3s ease;
   -webkit-transition: transform 0.3s ease;
   -moz-transition: transform 0.3s ease;
   -ms-transition: transform 0.3s ease;
