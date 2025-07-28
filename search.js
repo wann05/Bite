@@ -84,7 +84,3 @@ document.querySelectorAll(".menu-item").forEach((item) => {
 closeBtn.addEventListener("click", () => {
   popup.classList.remove("show");
 });
-
-
-
-
