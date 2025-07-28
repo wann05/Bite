@@ -60,7 +60,7 @@ backToTopBtn.addEventListener("click", () => {
 
   // Fungsi untuk cek ukuran layar dan tambahkan kelas animasi
   function handleResize() {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 450) {
       hamburger.classList.add('slide-in');
       navLinks.classList.remove('slide-in'); // atau kamu aktifkan hanya saat klik menu
     } else {
