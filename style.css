@@ -22,10 +22,6 @@ button, a {
   outline: none;
 }
 
-button:focus, a:focus {
-  box-shadow: 0 0 0 2px #a47148;
-}
-
 .wrapper {
   flex: 1;
 }
