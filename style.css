@@ -16,31 +16,6 @@ body {
   min-height: 100vh;
 }
 
-/* hilangin efek biru biru */
-button,
-a,
-input,
-textarea {
-  -webkit-tap-highlight-color: transparent; /* Hilangkan highlight biru saat tap (Android) */
-  outline: none; /* Hilangkan outline fokus */
-  box-shadow: none; /* Hilangkan bayangan fokus jika ada */
-  border: none; /* Opsional, kalau tombolmu pakai border */
-  background-color: transparent; /* Opsional jika tombol default punya background */
-}
-
-button:focus,
-a:focus,
-input:focus,
-textarea:focus,
-button:active,
-a:active,
-input:active,
-textarea:active {
-  outline: none !important;
-  box-shadow: none !important;
-  background-color: transparent !important; /* Hindari background saat ditekan */
-}
-
 .wrapper {
   flex: 1;
 }
@@ -1004,4 +979,36 @@ footer {
 #backToTop:hover {
   background: rgba(165, 113, 72, 1);
   transform: translateY(-5px) !important;
+}
+
+/* ngilangin biru biru */
+
+/* Hilangkan highlight biru saat disentuh di semua elemen interaktif */
+.menu-item,
+.close-popup img,
+.hamburger,
+button,
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none; /* cegah long press menu iOS */
+  outline: none;
+  box-shadow: none;
+}
+
+/* Hapus efek aktif & fokus */
+.menu-item:focus,
+.menu-item:active,
+.close-popup img:focus,
+.close-popup img:active,
+.hamburger:focus,
+.hamburger:active,
+button:focus,
+button:active,
+a:focus,
+a:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
 }
