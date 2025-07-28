@@ -105,3 +105,110 @@
     <script src="search.js"></script>
   </body>
 </html>
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One' Bite - Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo"><a href="index.html">One' Bite</a></div>
+      <div class="hamburger" id="hamburgerBtn" onclick="togglePopup()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="close-icon">&times;</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="menu.html">MENU</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+
+    <div class="glass-popup" id="popupMenu">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT US</a>
+      <a href="menu.html">MENU</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+
+    <button id="backToTop" aria-label="Back to top">
+      <img src="https://img.icons8.com/windows/1600/double-up.png" />
+    </button>
+    
+    <!-- Contact section -->
+    <section class="contact-final">
+      <h2>Hubungi Kami</h2>
+      <div class="contact-grid">
+        <!-- Kiri: Form + Social Media -->
+        <div class="contact-left">
+          <form class="contact-form">
+            <input type="text" placeholder="Nama Anda" required />
+            <input type="email" placeholder="Email Anda" required />
+            <input type="pesan" placeholder="Masukan" required />
+            <button type="submit">Kirim</button>
+          </form>
+
+          <div class="icon-row">
+            <div class="icon-circle" style="background-color: #a47148">
+              <a href="https://wa.me/+6281363314897" target="_blank">
+                <img
+                  src="https://img.icons8.com/material-outlined/1600/FFFFFF/whatsapp--v1.png"
+                  alt="whatsapp icon"
+                />
+              </a>
+            </div>
+            <div class="icon-circle" style="background-color: #a47148">
+              <a href="https://www.instagram.com/wawndyi/" target="_blank">
+                <img
+                  src="https://img.icons8.com/material-outlined/1600/FFFFFF/instagram-new--v1.png"
+                  alt="instagram icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kanan: Lokasi & Maps -->
+        <div class="contact-right">
+          <div class="location-info">
+            <h3>Alamat Kami</h3>
+            <p>Jl. Makanan Lezat No. 88, Jakarta Selatan, Indonesia</p>
+
+            <h4>Jam Buka</h4>
+            <p>
+              Senin - Jumat: 10.00 - 22.00<br />
+              Sabtu & Minggu: 09.00 - 23.00
+            </p>
+          </div>
+
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31693.69277673824!2d106.827153!3d-6.175392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e9809a5f2f%3A0xa3312aa41cb9aa98!2sJakarta%20Selatan!5e0!3m2!1sen!2sid!4v1711342312345"
+              width="100%"
+              height="220"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 One' Bite. All rights reserved.</p>
+      <p>Ikuti kami di IG @onebite.id | WhatsApp: 08xx-xxxx-xxxx</p>
+    </footer>
+    <script src="menu-popup.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>

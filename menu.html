@@ -422,3 +422,427 @@
     </div>
   </body>
 </html>
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One' Bite - Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo"><a href="index.html">One' Bite</a></div>
+      <div class="hamburger" id="hamburgerBtn" onclick="togglePopup()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="close-icon">&times;</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="menu.html">MENU</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+
+    <div class="glass-popup" id="popupMenu">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT US</a>
+      <a href="menu.html">MENU</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+
+    <button id="backToTop" aria-label="Back to top">
+      <img src="https://img.icons8.com/windows/1600/double-up.png" />
+    </button>
+
+    <div class="search-bar">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Cari makanan atau minuman..."
+      />
+      <button id="searchButton">Search</button>
+      <button id="resetButton">Reset</button>
+    </div>
+
+    <div class="filter-categories">
+      <label class="custom-checkbox">
+        <input type="checkbox" id="filterMakanan" checked />
+        <span class="checkmark"></span>
+        Makanan
+      </label>
+      <label class="custom-checkbox">
+        <input type="checkbox" id="filterMinuman" checked />
+        <span class="checkmark"></span>
+        Minuman
+      </label>
+    </div>
+
+    <div id="noResultMessage" class="no-result-message" style="display: none">
+      Maaf, makanan/minuman yang kamu mau tidak tersedia.
+    </div>
+
+    <!-- Menu Makanan -->
+    <section class="menu-section makanan-section">
+      <h2>Makanan</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Nasi Goreng" />
+          <h4>Nasi Goreng</h4>
+          <p><span class="item-price">Rp 25.000</span></p>
+          <p class="item-description hidden">
+            Nasi goreng spesial dengan bumbu khas, telur, dan irisan ayam, cocok
+            disantap kapan saja sebagai hidangan utama favorit Indonesia.
+          </p>
+        </div>
+
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Sate Ayam" />
+          <h4>Sate Ayam</h4>
+          <p><span class="item-price">Rp 30.000</span></p>
+          <p class="item-description hidden">
+            Sate ayam empuk dengan bumbu kacang gurih dan lontong, cocok untuk
+            makan siang atau malam yang mengenyangkan.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Rendang" />
+          <h4>Rendang</h4>
+          <p><span class="item-price">Rp 35.000</span></p>
+          <p class="item-description hidden">
+            Daging sapi dimasak lama dengan santan dan rempah khas Minang,
+            menghasilkan rasa kaya dan tekstur empuk yang menggoda.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Ayam Geprek" />
+          <h4>Ayam Geprek</h4>
+          <p><span class="item-price">Rp 22.000</span></p>
+          <p class="item-description hidden">
+            Ayam goreng tepung yang digeprek dengan sambal bawang pedas, cocok
+            bagi pencinta makanan gurih dan pedas membara.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Bakso" />
+          <h4>Bakso</h4>
+          <p><span class="item-price">Rp 20.000</span></p>
+          <p class="item-description hidden">
+            Bakso kenyal dengan kuah kaldu sapi gurih, disajikan dengan mie,
+            tahu, dan taburan bawang goreng yang menggoda.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Soto Ayam" />
+          <h4>Soto Ayam</h4>
+          <p><span class="item-price">Rp 23.000</span></p>
+          <p class="item-description hidden">
+            Soto ayam bening dengan suwiran ayam, telur rebus, dan koya, cocok
+            dinikmati saat cuaca dingin atau hujan.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Gado-Gado" />
+          <h4>Gado-Gado</h4>
+          <p><span class="item-price">Rp 18.000</span></p>
+          <p class="item-description hidden">
+            Sayuran segar disiram saus kacang kental, dilengkapi telur, tahu,
+            tempe, dan kerupuk sebagai pelengkap sehat dan lezat.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Lontong Sayur" />
+          <h4>Lontong Sayur</h4>
+          <p><span class="item-price">Rp 20.000</span></p>
+          <p class="item-description hidden">
+            Potongan lontong disiram sayur labu siam bersantan, lengkap dengan
+            telur, kerupuk, dan sambal sebagai sarapan nikmat.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Mie Goreng" />
+          <h4>Mie Goreng</h4>
+          <p><span class="item-price">Rp 19.000</span></p>
+          <p class="item-description hidden">
+            Mie goreng dengan bumbu manis gurih, dilengkapi telur, sayur, dan
+            potongan ayam, cocok disantap kapan saja.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Pecel Lele" />
+          <h4>Pecel Lele</h4>
+          <p><span class="item-price">Rp 21.000</span></p>
+          <p class="item-description hidden">
+            Ikan lele goreng renyah disajikan dengan sambal terasi pedas dan
+            lalapan segar sebagai teman makan nasi hangat.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Rawon" />
+          <h4>Rawon</h4>
+          <p><span class="item-price">Rp 27.000</span></p>
+          <p class="item-description hidden">
+            Sup daging sapi hitam dengan kluwek, aroma khas dan rasa dalam,
+            dilengkapi taoge dan sambal untuk kesempurnaan rasa.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Nasi Padang" />
+          <h4>Nasi Padang</h4>
+          <p><span class="item-price">Rp 30.000</span></p>
+          <p class="item-description hidden">
+            Nasi lengkap dengan aneka lauk khas Minang seperti rendang, gulai,
+            dan sambal, penuh cita rasa Nusantara sejati.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Ayam Bakar" />
+          <h4>Ayam Bakar</h4>
+          <p><span class="item-price">Rp 28.000</span></p>
+          <p class="item-description hidden">
+            Ayam dibakar dengan bumbu manis pedas hingga meresap, cocok disantap
+            bersama sambal, nasi, dan lalapan segar.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Sop Buntut" />
+          <h4>Sop Buntut</h4>
+          <p><span class="item-price">Rp 40.000</span></p>
+          <p class="item-description hidden">
+            Sup buntut sapi dengan kuah bening gurih, dilengkapi wortel,
+            kentang, dan taburan bawang goreng yang menggugah selera.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Nasi Uduk" />
+          <h4>Nasi Uduk</h4>
+          <p><span class="item-price">Rp 17.000</span></p>
+          <p class="item-description hidden">
+            Nasi gurih dengan santan, disajikan dengan telur, bihun, orek tempe,
+            dan sambal khas untuk sarapan enak nan lengkap.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Bubur Ayam" />
+          <h4>Bubur Ayam</h4>
+          <p><span class="item-price">Rp 16.000</span></p>
+          <p class="item-description hidden">
+            Bubur nasi lembut disajikan dengan suwiran ayam, cakwe, bawang
+            goreng, dan kerupuk sebagai sarapan praktis dan hangat.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Tahu Gejrot" />
+          <h4>Tahu Gejrot</h4>
+          <p><span class="item-price">Rp 15.000</span></p>
+          <p class="item-description hidden">
+            Tahu goreng potong disiram kuah pedas manis asam dari bawang, cabai,
+            dan gula merah, menyegarkan sebagai camilan.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Karedok" />
+          <h4>Karedok</h4>
+          <p><span class="item-price">Rp 18.000</span></p>
+          <p class="item-description hidden">
+            Sayuran mentah segar disiram saus kacang khas Sunda, cocok untuk
+            pecinta makanan sehat dan penuh rasa tradisional.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Martabak Telur" />
+          <h4>Martabak Telur</h4>
+          <p><span class="item-price">Rp 25.000</span></p>
+          <p class="item-description hidden">
+            Kulit tipis diisi telur, daging cincang, dan daun bawang, digoreng
+            garing dan disajikan dengan acar bawang segar.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Lalapan" />
+          <h4>Lalapan</h4>
+          <p><span class="item-price">Rp 20.000</span></p>
+          <p class="item-description hidden">
+            Aneka sayur segar seperti timun, kemangi, dan kol, disajikan dengan
+            sambal dan lauk goreng pilihan yang menggoda.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar makanan/nasi goreng.png" alt="Mie Aceh" />
+          <h4>Mie Aceh</h4>
+          <p><span class="item-price">Rp 22.000</span></p>
+          <p class="item-description hidden">
+            Mie kuning tebal dimasak dengan rempah khas Aceh dan potongan
+            daging, menghasilkan rasa pedas gurih kaya aroma.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Minuman -->
+    <section class="menu-section light minuman-section">
+      <h2>Minuman</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="gambar minuman/teh.png" alt="Es Teh Manis" />
+          <h4>Es Teh Manis</h4>
+          <p><span class="item-price">Rp 5.000</span></p>
+          <p class="item-description hidden">
+            Es teh manis menyegarkan dengan rasa manis pas, cocok dinikmati
+            siang hari atau saat makan bersama keluarga.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar minuman/teh.png" alt="Es Jeruk" />
+          <h4>Es Jeruk</h4>
+          <p><span class="item-price">Rp 6.000</span></p>
+          <p class="item-description hidden">
+            Perasan jeruk segar dengan es batu memberikan rasa asam manis
+            menyegarkan, cocok dinikmati kapan pun saat haus.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar minuman/teh.png" alt="Teh Tarik" />
+          <h4>Teh Tarik</h4>
+          <p><span class="item-price">Rp 10.000</span></p>
+          <p class="item-description hidden">
+            Minuman teh khas Malaysia yang ditarik berulang kali dengan susu,
+            menghasilkan buih lembut dan rasa manis gurih.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar minuman/teh.png" alt="Kopi Hitam" />
+          <h4>Kopi Hitam</h4>
+          <p><span class="item-price">Rp 8.000</span></p>
+          <p class="item-description hidden">
+            Kopi hitam pekat tanpa gula, cocok bagi pencinta rasa pahit dan
+            aroma kuat untuk menemani pagi atau malam hari.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar minuman/teh.png" alt="Kopi Susu" />
+          <h4>Kopi Susu</h4>
+          <p><span class="item-price">Rp 10.000</span></p>
+          <p class="item-description hidden">
+            Kombinasi kopi dan susu menghasilkan minuman creamy dengan rasa
+            manis seimbang, nikmat diminum hangat atau dingin.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar minuman/teh.png" alt="Es Cendol" />
+          <h4>Es Cendol</h4>
+          <p><span class="item-price">Rp 12.000</span></p>
+          <p class="item-description hidden">
+            Minuman tradisional dengan cendol hijau, santan, dan gula merah
+            cair, memberikan rasa manis gurih yang menyegarkan.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar minuman/teh.png" alt="Es Kelapa Muda" />
+          <h4>Es Kelapa Muda</h4>
+          <p><span class="item-price">Rp 13.000</span></p>
+          <p class="item-description hidden">
+            Daging kelapa muda segar dengan air kelapa asli, disajikan dingin
+            untuk menghilangkan dahaga di hari yang panas.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar minuman/teh.png" alt="Bandrek" />
+          <h4>Bandrek</h4>
+          <p><span class="item-price">Rp 9.000</span></p>
+          <p class="item-description hidden">
+            Minuman hangat khas Sunda dengan jahe, gula merah, dan
+            rempah-rempah, cocok menghangatkan tubuh saat cuaca dingin.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar minuman/teh.png" alt="Wedang Jahe" />
+          <h4>Wedang Jahe</h4>
+          <p><span class="item-price">Rp 9.000</span></p>
+          <p class="item-description hidden">
+            Minuman jahe hangat dengan aroma harum dan rasa pedas hangat, cocok
+            diminum malam hari atau saat flu menyerang.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar minuman/teh.png" alt="Es Doger" />
+          <h4>Es Doger</h4>
+          <p><span class="item-price">Rp 12.000</span></p>
+          <p class="item-description hidden">
+            Minuman dingin khas Betawi dengan santan, tape, roti, dan ketan
+            hitam, nikmat dan cocok untuk pencuci mulut lezat.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar minuman/teh.png" alt="Milkshake Cokelat" />
+          <h4>Milkshake Cokelat</h4>
+          <p><span class="item-price">Rp 15.000</span></p>
+          <p class="item-description hidden">
+            Milkshake lembut rasa cokelat manis dengan es krim, cocok untuk
+            anak-anak dan dewasa pecinta minuman segar manis.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar minuman/teh.png" alt="Es Campur" />
+          <h4>Es Campur</h4>
+          <p><span class="item-price">Rp 14.000</span></p>
+          <p class="item-description hidden">
+            Aneka buah dan isi seperti cincau, kolang-kaling, dan agar-agar
+            disiram sirup manis dan susu, segar untuk dinikmati.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar minuman/teh.png" alt="Air Mineral" />
+          <h4>Air Mineral</h4>
+          <p><span class="item-price">Rp 4.000</span></p>
+          <p class="item-description hidden">
+            Air putih segar yang penting untuk menjaga hidrasi tubuh, cocok
+            diminum setiap saat agar tetap sehat dan bugar.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar minuman/teh.png" alt="Susu Kedelai" />
+          <h4>Susu Kedelai</h4>
+          <p><span class="item-price">Rp 7.000</span></p>
+          <p class="item-description hidden">
+            Minuman sehat berbahan dasar kedelai murni, tinggi protein, cocok
+            untuk vegetarian dan menjaga pola hidup sehat alami.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="gambar minuman/teh.png" alt="Es Buah" />
+          <h4>Es Buah</h4>
+          <p><span class="item-price">Rp 13.000</span></p>
+          <p class="item-description hidden">
+            Potongan buah segar dengan sirup dan es batu, menciptakan perpaduan
+            rasa manis dan asam yang menyegarkan tenggorokan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 One' Bite. All rights reserved.</p>
+      <p>Pesan via WhatsApp: 08xx-xxxx-xxxx | IG: @onebite.id</p>
+    </footer>
+
+    <div class="popup-menu" id="menuPopup">
+      <span class="close-popup" id="closePopup"><img src="https://img.icons8.com/ios-filled/1600/multiply.png" alt="multiply"/></span>
+      <h3 id="popupTitle">Judul Makanan</h3>
+      <div class="popup-price" id="popupPrice">Rp 0</div>
+      <p class="popup-description" id="popupDesc">Deskripsi makanan...</p>
+      <div class="popup-footer">
+        <input type="number" id="popupQty" min="1" max="10" value="1" />
+        <button id="orderButton">Pesan</button>
+      </div>
+      <script src="search.js"></script>
+      <script src="menu-popup.js"></script>
+    </div>
+  </body>
+</html>

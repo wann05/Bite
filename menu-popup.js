@@ -74,5 +74,3 @@ backToTopBtn.addEventListener("click", () => {
 
   // Cek ulang saat resize
   window.addEventListener('resize', handleResize);
-
-  
