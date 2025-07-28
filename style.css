@@ -16,6 +16,16 @@ body {
   min-height: 100vh;
 }
 
+/* hilangin efek biru biru */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+button:focus, a:focus {
+  box-shadow: 0 0 0 2px #a47148;
+}
+
 .wrapper {
   flex: 1;
 }
